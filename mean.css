@@ -1,0 +1,306 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+body {
+    background-color: #EDF3F8;
+}
+
+/* header start */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 48px 30px;
+    align-items: center;
+}
+
+.navbar-lift {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: #979797;
+    font-size: 19px;
+}
+
+a:hover {
+    color: #36536B;
+}
+
+button {
+    width: 173px;
+    height: 48px;
+    border-radius: 24px;
+    background-color: #BA4270;
+    font-size: 15px;
+    color: white;
+    border: none;
+}
+
+.header-centr {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    align-items: center;
+}
+
+.header-centr h1 {
+    font-size: 70px;
+    width: 546px;
+    height: 243px;
+}
+
+/* header end */
+
+
+/* main start */
+.main-centr {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.main-lift {
+    width: 445px;
+    height: 164px;
+}
+
+.main-lift h3 {
+    font-size: 48px;
+}
+
+.main-lift p {
+    margin-top: 10px;
+    color: #6C8294;
+}
+
+.main-lift p:hover {
+    color: #36536B;
+}
+
+.main-box {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box img {
+    width: 106px;
+    height: 106px;
+}
+
+.box h5 {
+    font-size: 18px;
+    color: #6C8294;
+    margin-top: 20px;
+}
+
+.box h5:hover {
+    color: #36536B;
+}
+
+/* main end */
+
+/* footer start */
+footer {
+    margin-top: 70px;
+    background-color: #1B262F;
+    height: 100px;
+}
+
+.footer {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding: 25px 0;
+}
+
+.footer-right {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.footer-right a:hover {
+    color: white;
+}
+
+.footer-lift {
+    display: flex;
+    gap: 15px;
+}
+
+/* footer end */
+.dropdown {
+    display: none;
+}
+
+
+
+
+/* dwob down start */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* dwob down end */
+
+
+
+@media(max-width: 770px) {
+    .centr-lift {
+        width: 159px;
+        height: 300px;
+        position: absolute;
+        right: 400px;
+        top: -20px;
+    }
+
+    .centr-right {
+        width: 573px;
+        height: 122px;
+        position: absolute;
+        top: 600px;
+        left: 180px;
+    }
+
+    .centr-right h1 {
+        font-size: 45px;
+    }
+
+    .main-right {
+        position: absolute;
+        top: 700px;
+        left: 100px;
+    }
+
+    .main-lift {
+        position: absolute;
+        top: 1100px;
+    }
+
+    .main-box {
+        position: absolute;
+        top: 1390px;
+        left: 130px;
+        display: flex;
+        gap: 50px;
+    }
+
+    footer {
+        position: absolute;
+        top: 1600px;
+        left: 80px;
+        width: 600px;
+    }
+
+    .dropdown {
+        display: none;
+    }
+}
+
+
+@media(max-width: 380px) {
+    .dropbtn {
+        display: flex;
+    }
+
+    .navbar-lift {
+        display: none;
+    }
+
+    .centr-lift {
+        position: absolute;
+        left: 10px;
+    }
+
+    .dropdown {
+        display: flex;
+    }
+
+    .centr-right {
+        position: absolute;
+        left: 10px;
+    }
+
+    .main-right {
+        width: 320px;
+        height: 200px;
+        position: absolute;
+        left: 40px;
+    }
+
+    .main-lift {
+        position: absolute;
+        width: 328px;
+        text-align: center;
+    }
+
+    .main-box {
+        display: flex;
+        flex-wrap: wrap;
+        position: absolute;
+        right: 100px;
+        top: 1500px;
+    }
+    
+
+    footer {
+        margin-top: 700px;
+        position: absolute;
+        left: 29px;
+        width: 335px;
+    }
+
+    .footer-right{
+        display: flex;
+    }
+}
